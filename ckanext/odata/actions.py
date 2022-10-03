@@ -115,7 +115,7 @@ def odata(context, data_dict):
     else:
         action = t.get_action('datastore_search')
         
-        limit = get_qs_int('$top', 500)
+        limit = get_qs_int('$top', 10000)
         offset = get_qs_int('$skip', 0)
 
         data_dict = {
